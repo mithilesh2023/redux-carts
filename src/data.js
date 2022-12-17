@@ -1,10 +1,15 @@
-const data=[
+const ProductData=[
     {
         id:1,
         img:"http://images6.fanpop.com/image/photos/35600000/Puppy-dogs-35608642-2048-1365.jpg",
         title:"dogesh",
         category:"dog",
-        price:10
+        price:10,
+        qty:0,
+        rating:'3.8',
+        respyname:'Massala Theorry',
+        somedata:"1175+ order palced today"
+
     }, {
         id:2,
         img:"http://images6.fanpop.com/image/photos/35600000/Puppy-dogs-35608642-2048-1365.jpg",
@@ -61,4 +66,4 @@ const data=[
         price:10
     },
 ]
-export default data;
+export default ProductData;
