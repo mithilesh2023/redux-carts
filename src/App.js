@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import CardData from './components/CardData'
+import CartData from './components/CartData'
 import Header from './components/Header'
 import MyCarts from './components/MyCarts'
 import Error from './components/Error'
@@ -11,7 +11,7 @@ const App = () => {
           <Header/>
         <Routes>
           <Route path='/' element={<MyCarts/>}/>
-          <Route path='/carddata' element={<CardData/>}/>
+          <Route path='/cart/:id' element={<CartData/>}/>
           <Route path='*' element={<Error/>}/>
         </Routes>
       </BrowserRouter>

@@ -11,7 +11,6 @@ const MyCarts = () => {
     // console.log(e);
     dispatch(ADD_CART(e))
   }
-
   return (
     <>
       <p className='text-4xl text-center bg-slate-200 mt-16'>Add To Cart Project</p>
@@ -27,7 +26,7 @@ const MyCarts = () => {
                   <p className='text-2xl'>Price: <span className='font-semibold text-red-600'> ₹{data.price}.00/-</span></p>
                 </div>
                 <div className='p-3'>
-                  <button onClick={() => send(data)} className='bg-green-600 w-full px-3 py-2 text-red-900 text-2xl'>Add to Cart</button>
+                  <button onClick={() => send(data)} className='bg-green-600 hover:bg-green-800 w-full px-3 py-2 text-red-900 text-2xl'>Add to Cart</button>
                 </div>
               </div>
             )
@@ -37,13 +36,4 @@ const MyCarts = () => {
     </>
   )
 }
-const MyAppCart = ({ datas }) => {
-
-  return (
-    <>
-
-    </>
-  )
-}
-
 export default MyCarts
